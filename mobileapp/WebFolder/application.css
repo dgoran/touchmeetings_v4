@@ -1,0 +1,188 @@
+﻿/*
+	This CSS file, which was automatically created by Wakanda, allows you to share CSS styles for all the widgets on the Pages in your project.
+	The CSS styles that are created when you create a Widget Role are placed in this file too.
+*/
+
+
+/*Fix for regbutton container allign center*/
+
+#registerform_container{
+	
+	max-width: 350px;
+min-width: 220px;
+max-height:400px;
+margin: 0 auto;
+}
+
+#regbutton_container {
+	 max-width: 150px;
+min-width: 120px;
+margin: 0 auto;
+	
+}
+
+#register_button {
+	
+	min-width:120px;
+}
+
+
+/*Fix for google maps widget bug with repositioning to the right*/
+
+#container3 {
+
+
+
+	
+}
+
+#navigationView1 {
+	 z-index: 1;
+	 top: 0px;
+	 bottom: 0px;
+	 left: 0px;
+	 right: 0px !important;
+	
+	 position: absolute;
+	 
+}
+
+
+/*For background image*/
+#body1 {
+	background-size:100% !important;
+}
+
+
+/*To make footer disaper make body 1 bottom property 0px*/
+#body1 {
+	bottom: 0px !important;
+	
+	}
+
+
+
+/*For making footer small*/
+#viewManager1 {
+z-index: 1;
+top: 0px;
+bottom: 5px !important;
+left: 0px;
+right: 0px;
+position: absolute;
+}
+/*For making footer small*/
+#footer1 {
+	 height: 5px !important;
+	
+}
+/*For making footer small*/
+#navigationView1 .waf-navigationView-footer {
+	height: 5px !important;
+	 border-top-style: none;
+	 border-top-width: 5px;
+	 border-top-color: rgb(255, 0, 0);
+	 border-left-style: solid;
+	 border-left-width: 5px;
+	 border-left-color: rgb(255, 0, 0);
+	 border-right-style: solid;
+	 border-right-width: 5px;
+	 border-right-color: rgb(255, 0, 0);
+	 border-bottom-style: solid;
+	 border-bottom-width: 5px;
+	 border-bottom-color: rgb(255, 0, 0);
+	 background-color: rgb(255, 0, 0);
+}	 
+	 
+/*Make back button 3dimensional	 */
+#backButton1 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton2 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton3 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton4 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton5 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton6 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton7 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton8 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backButton9  {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+#backBotton10 {
+	 border-bottom-width: 2px!important;
+	 border-bottom-color: rgb(255, 0, 0)!important;	 
+}
+.waf-theme.wakanda_mobile .waf-label.waf-role-navicon {
+	font-family: 'Lucida grande', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/*for buttons to be the same*/
+.waf-state-default{
+	
+}
+.waf-state-selected {
+	 background-color: rgba(255, 170, 170, 0.148438);
+	 }.waf-theme.wakanda_mobile .waf-navigationView.waf-role-backbuttonclicked .waf-navigationView-header {
+	border-top-color: rgb(255, 0, 0);
+	border-left-color: rgb(255, 0, 0);
+	border-right-color: rgb(255, 0, 0);
+	border-bottom-color: rgb(255, 0, 0);
+	border-bottom-width: 0px!important;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	text-shadow: rgb(255, 0, 0) -1px 1px 0px;
+}
+
+.waf-theme.wakanda_mobile .waf-navigationView.waf-role-backbuttonclicked {
+	font-family: 'Lucida grande', 'Segoe UI', Tahoma, sans-serif;
+	border-bottom-width: 3px;
+	border-bottom-style: none;
+	border-right-width: 3px;
+	border-right-style: none;
+	border-left-width: 3px;
+	border-left-style: none;
+	border-top-width: 3px;
+	border-top-style: none;
+	border-bottom-color: rgb(0, 0, 0);
+	border-right-color: rgb(0, 0, 0);
+	border-left-color: rgb(0, 0, 0);
+	border-top-color: rgb(0, 0, 0);
+	text-align: center;
+	background-image: url(undefined);
+	background-repeat: no-repeat;
+	}
+#homeicons_row1 {
+	max-width:250px !important;
+	text-align:center;
+	margin:0 auto;
+	
+}
+#homeicons_row2 {
+	max-width:250px !important;
+	text-align:center;
+	margin:0 auto;
+}

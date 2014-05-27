@@ -1,0 +1,501 @@
+
+{
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"Venue" : 
+			{
+				"panelColor" : "#D8D8D8",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 323,
+						"Y" : 37
+					}
+				}
+			},
+			"Meeting" : 
+			{
+				"panelColor" : "#BFBFBF",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 35,
+						"Y" : 37
+					}
+				}
+			},
+			"Attendee" : 
+			{
+				"panelColor" : "#4FA997",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 788,
+						"Y" : 35
+					}
+				}
+			},
+			"Presentation" : 
+			{
+				"panelColor" : "#B8CCE4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 334,
+						"Y" : 368
+					}
+				}
+			},
+			"Speaker" : 
+			{
+				"panelColor" : "#548DD4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 36,
+						"Y" : 298
+					}
+				}
+			}
+		},
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0,
+			"lastScriptLocation" : 
+			{
+				"Attendee" : 
+				{
+					"computed" : "Attendee/Attendee-events.js"
+				},
+				"Speaker" : 
+				{
+					"computed" : "Speaker/Speaker-events.js"
+				},
+				"Venue" : 
+				{
+					"computed" : "Venue/Venue-events.js"
+				}
+			}
+		}
+	},
+	"dataClasses" : 
+	[
+		{
+			"name" : "Attendee",
+			"className" : "Attendee",
+			"collectionName" : "AttendeeCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "firstName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "lastName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "group",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "email",
+					"kind" : "storage",
+					"scope" : "public",
+					"not_null" : true,
+					"type" : "string"
+				},
+				{
+					"name" : "street",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"defaultFormat" : 
+					[
+						{
+							"format" : "[1-9]",
+							"presentation" : "text"
+						}
+					]
+				},
+				{
+					"name" : "city",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "zip",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "state",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "country",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "telephone",
+					"kind" : "storage",
+					"scope" : "public",
+					"not_null" : true,
+					"type" : "string",
+					"identifying" : true,
+					"defaultFormat" : 
+					[
+						{
+							"format" : "(###) ###-####",
+							"presentation" : "text"
+						}
+					]
+				},
+				{
+					"name" : "fullAddress",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "model.Attendee.fullAddress.onGet",
+							"userDefined" : true
+						}
+					]
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Meeting",
+			"className" : "Meeting",
+			"collectionName" : "MeetingCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "welcometext",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"multiLine" : true
+				},
+				{
+					"name" : "highlights",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"multiLine" : true
+				},
+				{
+					"name" : "tour",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"multiLine" : true
+				},
+				{
+					"name" : "votingurl",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Presentation",
+			"className" : "Presentation",
+			"collectionName" : "PresentationCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "time",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "title",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"multiLine" : true
+				},
+				{
+					"name" : "presenter",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "SpeakerCollection",
+					"reversePath" : true,
+					"path" : "presentation"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Speaker",
+			"className" : "Speaker",
+			"collectionName" : "SpeakerCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "firstName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "lastName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "biography",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "url",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "photo",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "image"
+				},
+				{
+					"name" : "fullName",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "model.Speaker.fullName.onGet",
+							"userDefined" : true
+						}
+					]
+				},
+				{
+					"name" : "attribute1",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "presentation",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Presentation",
+					"path" : "Presentation"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		},
+		{
+			"name" : "Venue",
+			"className" : "Venue",
+			"collectionName" : "VenueCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
+				{
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
+				},
+				{
+					"name" : "name",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "street",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "city",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "zip",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"defaultFormat" : 
+					[
+						{
+							"format" : "[1-9]",
+							"presentation" : "text"
+						}
+					]
+				},
+				{
+					"name" : "state",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "country",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "image",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "image"
+				},
+				{
+					"name" : "fullAddress",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "model.Venue.fullAddress.onGet",
+							"userDefined" : true
+						}
+					]
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
+				}
+			]
+		}
+	]
+}
