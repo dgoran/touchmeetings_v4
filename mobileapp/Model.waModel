@@ -22,7 +22,7 @@
 			},
 			"Meeting" : 
 			{
-				"panelColor" : "#BFBFBF",
+				"panelColor" : "rgb(255, 78, 89)",
 				"panel" : 
 				{
 					"isOpen" : "true",
