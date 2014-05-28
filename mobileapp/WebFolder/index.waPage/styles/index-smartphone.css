@@ -7,8 +7,8 @@
 	 z-index: 9;
 	 width: 75px;
 	 height: 19px;
-	 top: 107px;
-	 left: 9px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -433,8 +433,8 @@
 	 z-index: 3;
 	 width: 75px;
 	 height: 19px;
-	 top: 69px;
-	 left: 8px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -460,8 +460,8 @@
 	 z-index: 2;
 	 width: 75px;
 	 height: 19px;
-	 top: 30px;
-	 left: 7px;
+	 top: 32px;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -475,7 +475,7 @@
 	 z-index: 2;
 	 width: 123px;
 	 height: 19px;
-	 top: 30px;
+	 top: 32px;
 	 left: 87px;
 	
 	 position: absolute;
@@ -504,8 +504,8 @@
 	 z-index: 2;
 	 width: 75px;
 	 height: 19px;
-	 top: 43px;
-	 left: 7px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -532,8 +532,8 @@
 	 z-index: 1;
 	 width: 75px;
 	 height: 19px;
-	 top: 11px;
-	 left: 7px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -1680,10 +1680,10 @@
 
 #registerform_container {
 	 z-index: 3;
-	 top: 0px;
-	 bottom: 0px;
-	 left: 0px;
-	 right: 0px;
+	 top: 10px;
+	 bottom: 10px;
+	 left: 10px;
+	 right: 10px;
 	
 	 position: absolute;
 	 border-top-left-radius: 5px;
