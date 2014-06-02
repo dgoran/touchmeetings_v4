@@ -24,20 +24,24 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 
 // eventHandlers// @lock
 
+	Submit.touchcancel = function Submit_touchcancel (event)// @startlock
+	{// @endlock
+		// Add your code here
+		$$('Submit').setTextColor("white");
+	};// @lock
+
 	Submit.touchstart = function Submit_touchstart (event)// @startlock
 	{// @endlock
 		// Add your code here
-		$$('Submit').setBackgroundColor("#DDDDDD");
+	$$('Submit').setTextColor("red");
+		
 	};// @lock
 
 	Submit.touchend = function Submit_touchend (event)// @startlock
 	{// @endlock
-		// Add your code here
-//		$$('Submit').setTextColor('red');
-//		sources.attendee.save({onSuccess:function(event) //save the current entity
-//		{
-//			sources.attendee.addEntity(sources.attendee.getCurrentElement());//put current entity in the datasource's entity collection
-//		} });
+	// Add your code
+	$$('Submit').setTextColor('white');
+		sources.attendee.save;
 	};// @lock
 
 	register_button.touchcancel = function register_button_touchcancel (event)// @startlock
@@ -341,6 +345,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("Submit", "touchcancel", Submit.touchcancel, "WAF");
 	WAF.addListener("Submit", "touchstart", Submit.touchstart, "WAF");
 	WAF.addListener("Submit", "touchend", Submit.touchend, "WAF");
 	WAF.addListener("register_button", "touchcancel", register_button.touchcancel, "WAF");

@@ -3,6 +3,280 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#button11 {
+	 width: 173px;
+	 height: 80px;
+	 top: 77px;
+	 left: 520px;
+	
+	 position: absolute;
+	 z-index: 12;
+	 
+}
+
+#button10 {
+	 width: 173px;
+	 height: 80px;
+	 top: 144px;
+	 left: 764px;
+	
+	 position: absolute;
+	 z-index: 13;
+	 
+}
+
+#label25 {
+	 z-index: 10;
+	 width: 75px;
+	 height: 13px;
+	 top: 192px;
+	 left: 273px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField23 {
+	 z-index: 11;
+	 width: 130px;
+	 height: 22px;
+	 top: 188px;
+	 left: 353px;
+	
+	 position: absolute;
+	 
+}
+
+#label24 {
+	 z-index: 9;
+	 width: 75px;
+	 height: 13px;
+	 top: 150px;
+	 left: 273px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField22 {
+	 z-index: 9;
+	 width: 130px;
+	 height: 22px;
+	 top: 146px;
+	 left: 353px;
+	
+	 position: absolute;
+	 
+}
+
+#label23 {
+	 z-index: 9;
+	 width: 75px;
+	 height: 13px;
+	 top: 108px;
+	 left: 273px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField21 {
+	 z-index: 9;
+	 width: 130px;
+	 height: 22px;
+	 top: 104px;
+	 left: 353px;
+	
+	 position: absolute;
+	 
+}
+
+#label22 {
+	 z-index: 8;
+	 width: 75px;
+	 height: 13px;
+	 top: 66px;
+	 left: 273px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField20 {
+	 z-index: 8;
+	 width: 130px;
+	 height: 22px;
+	 top: 62px;
+	 left: 353px;
+	
+	 position: absolute;
+	 
+}
+
+#label21 {
+	 z-index: 7;
+	 width: 75px;
+	 height: 13px;
+	 top: 24px;
+	 left: 273px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField19 {
+	 z-index: 7;
+	 width: 130px;
+	 height: 22px;
+	 top: 20px;
+	 left: 353px;
+	
+	 position: absolute;
+	 
+}
+
+#label20 {
+	 z-index: 6;
+	 width: 75px;
+	 height: 13px;
+	 top: 192px;
+	 left: 15px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField18 {
+	 z-index: 6;
+	 width: 130px;
+	 height: 22px;
+	 top: 188px;
+	 left: 95px;
+	
+	 position: absolute;
+	 
+}
+
+#label19 {
+	 z-index: 5;
+	 width: 75px;
+	 height: 13px;
+	 top: 150px;
+	 left: 15px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField17 {
+	 z-index: 5;
+	 width: 130px;
+	 height: 22px;
+	 top: 146px;
+	 left: 95px;
+	
+	 position: absolute;
+	 
+}
+
+#label18 {
+	 z-index: 4;
+	 width: 75px;
+	 height: 13px;
+	 top: 108px;
+	 left: 15px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField16 {
+	 z-index: 4;
+	 width: 130px;
+	 height: 22px;
+	 top: 104px;
+	 left: 95px;
+	
+	 position: absolute;
+	 
+}
+
+#label17 {
+	 z-index: 3;
+	 width: 75px;
+	 height: 13px;
+	 top: 66px;
+	 left: 15px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField15 {
+	 z-index: 3;
+	 width: 130px;
+	 height: 22px;
+	 top: 62px;
+	 left: 95px;
+	
+	 position: absolute;
+	 
+}
+
+#label15 {
+	 z-index: 2;
+	 width: 75px;
+	 height: 13px;
+	 top: 24px;
+	 left: 15px;
+	
+	 position: absolute;
+	 min-width: 75px;
+	 
+}
+
+#textField14 {
+	 z-index: 2;
+	 width: 130px;
+	 height: 22px;
+	 top: 20px;
+	 left: 95px;
+	
+	 position: absolute;
+	 
+}
+
+#container8 {
+	 z-index: 2;
+	 width: 718px;
+	 height: 286px;
+	 top: 386px;
+	 left: 11px;
+	
+	 position: absolute;
+	 
+}
+
+#dataGrid3 {
+	 z-index: 1;
+	 width: 990px;
+	 height: 354px;
+	 top: 12px;
+	 left: 12px;
+	
+	 position: absolute;
+	 
+}
+
 #container7 {
 	 z-index: 5;
 	 width: 260px;
@@ -59,7 +333,7 @@
 }
 
 #label16 {
-	 z-index: 13;
+	 z-index: 12;
 	 width: 76px;
 	 height: 13px;
 	 top: 256px;
@@ -70,7 +344,7 @@
 }
 
 #fileUpload2 {
-	 z-index: 13;
+	 z-index: 12;
 	 width: 260px;
 	 height: 35px;
 	 top: 245px;
@@ -95,8 +369,8 @@
 	 z-index: 9;
 	 width: 75px;
 	 height: 13px;
-	 top: 318px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -118,8 +392,8 @@
 	 z-index: 8;
 	 width: 75px;
 	 height: 13px;
-	 top: 276px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -141,8 +415,8 @@
 	 z-index: 7;
 	 width: 75px;
 	 height: 13px;
-	 top: 234px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -164,8 +438,8 @@
 	 z-index: 6;
 	 width: 75px;
 	 height: 13px;
-	 top: 192px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -187,8 +461,8 @@
 	 z-index: 5;
 	 width: 75px;
 	 height: 13px;
-	 top: 150px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -210,8 +484,8 @@
 	 z-index: 4;
 	 width: 75px;
 	 height: 13px;
-	 top: 108px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -233,8 +507,8 @@
 	 z-index: 3;
 	 width: 75px;
 	 height: 13px;
-	 top: 66px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -256,8 +530,8 @@
 	 z-index: 2;
 	 width: 75px;
 	 height: 13px;
-	 top: 24px;
-	 left: 15px;
+	 top: NaNpx;
+	 left: NaNpx;
 	
 	 position: absolute;
 	 min-width: 75px;
@@ -365,10 +639,10 @@
 
 #label7 {
 	 z-index: 8;
-	 width: 71px;
-	 height: 16px;
-	 top: 242px;
-	 left: 20px;
+	 width: 78px;
+	 height: 13px;
+	 top: 244px;
+	 left: 13px;
 	
 	 position: absolute;
 	 
@@ -410,8 +684,8 @@
 #label5 {
 	 z-index: 6;
 	 width: 75px;
-	 height: 16px;
-	 top: 191px;
+	 height: 13px;
+	 top: 192px;
 	 left: 15px;
 	
 	 position: absolute;
@@ -433,8 +707,8 @@
 #label4 {
 	 z-index: 5;
 	 width: 75px;
-	 height: 16px;
-	 top: 149px;
+	 height: 13px;
+	 top: 150px;
 	 left: 15px;
 	
 	 position: absolute;
@@ -456,8 +730,8 @@
 #label3 {
 	 z-index: 4;
 	 width: 75px;
-	 height: 16px;
-	 top: 107px;
+	 height: 13px;
+	 top: 108px;
 	 left: 15px;
 	
 	 position: absolute;
@@ -479,8 +753,8 @@
 #label2 {
 	 z-index: 3;
 	 width: 75px;
-	 height: 16px;
-	 top: 65px;
+	 height: 13px;
+	 top: 66px;
 	 left: 15px;
 	
 	 position: absolute;
@@ -502,8 +776,8 @@
 #label1 {
 	 z-index: 2;
 	 width: 75px;
-	 height: 16px;
-	 top: 23px;
+	 height: 13px;
+	 top: 24px;
 	 left: 15px;
 	
 	 position: absolute;
@@ -549,7 +823,7 @@
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: -12px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -582,7 +856,7 @@
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: -12px;
+	 right: 5px;
 	
 	 position: absolute;
 	 
@@ -615,7 +889,7 @@
 	 top: 28px;
 	 bottom: 5px;
 	 left: 5px;
-	 right: -12px;
+	 right: 5px;
 	
 	 position: absolute;
 	 

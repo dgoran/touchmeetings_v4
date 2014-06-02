@@ -15,8 +15,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 323,
-						"Y" : 37
+						"X" : 788,
+						"Y" : 430
 					}
 				}
 			},
@@ -29,8 +29,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 35,
-						"Y" : 37
+						"X" : 29,
+						"Y" : 51
 					}
 				}
 			},
@@ -57,8 +57,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 334,
-						"Y" : 368
+						"X" : 109,
+						"Y" : 528
 					}
 				}
 			},
@@ -71,8 +71,8 @@
 					"pathVisible" : true,
 					"position" : 
 					{
-						"X" : 36,
-						"Y" : 298
+						"X" : 457,
+						"Y" : 115
 					}
 				}
 			}
@@ -95,6 +95,10 @@
 				"Venue" : 
 				{
 					"computed" : "Venue/Venue-events.js"
+				},
+				"Meeting" : 
+				{
+					"computed" : "Meeting/Meeting-events.js"
 				}
 			}
 		}
@@ -235,31 +239,52 @@
 					"indexKind" : "btree"
 				},
 				{
-					"name" : "welcometext",
+					"name" : "title",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
+				},
+				{
+					"name" : "description",
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "string",
 					"multiLine" : true
 				},
 				{
-					"name" : "highlights",
+					"name" : "date",
 					"kind" : "storage",
 					"scope" : "public",
-					"type" : "string",
-					"multiLine" : true
-				},
-				{
-					"name" : "tour",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string",
-					"multiLine" : true
+					"type" : "date",
+					"simpleDate" : false
 				},
 				{
 					"name" : "votingurl",
 					"kind" : "storage",
 					"scope" : "public",
 					"type" : "string"
+				},
+				{
+					"name" : "panels",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "SpeakerCollection",
+					"reversePath" : true,
+					"path" : "presentation"
+				},
+				{
+					"name" : "location",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
+						{
+							"from" : "model.Meeting.location.onGet",
+							"userDefined" : true
+						}
+					]
 				}
 			],
 			"key" : 
@@ -383,12 +408,6 @@
 					]
 				},
 				{
-					"name" : "attribute1",
-					"kind" : "storage",
-					"scope" : "public",
-					"type" : "string"
-				},
-				{
 					"name" : "presentation",
 					"kind" : "relatedEntity",
 					"scope" : "public",
@@ -488,6 +507,13 @@
 							"userDefined" : true
 						}
 					]
+				},
+				{
+					"name" : "fullAddress1",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Meeting",
+					"path" : "Meeting"
 				}
 			],
 			"key" : 
