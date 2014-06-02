@@ -1,428 +1,492 @@
-﻿{
-	"toJSON": true,
-	"extraProperties": {
-		"version": "2",
-		"classes": {
-			"Venue": {
-				"panelColor": "#D8D8D8",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 357,
-						"Y": 388
+
+{
+	"toJSON" : true,
+	"extraProperties" : 
+	{
+		"version" : "2",
+		"classes" : 
+		{
+			"Venue" : 
+			{
+				"panelColor" : "#D8D8D8",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 357,
+						"Y" : 388
 					}
 				}
 			},
-			"Meeting": {
-				"panelColor": "rgb(255, 78, 89)",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 29,
-						"Y": 51
+			"Meeting" : 
+			{
+				"panelColor" : "rgb(255, 78, 89)",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 29,
+						"Y" : 51
 					}
 				}
 			},
-			"Attendee": {
-				"panelColor": "#4FA997",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 661,
-						"Y": 56
+			"Attendee" : 
+			{
+				"panelColor" : "#4FA997",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 661,
+						"Y" : 56
 					}
 				}
 			},
-			"Presentation": {
-				"panelColor": "#B8CCE4",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 50,
-						"Y": 357
+			"Presentation" : 
+			{
+				"panelColor" : "#B8CCE4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 50,
+						"Y" : 357
 					}
 				}
 			},
-			"Speaker": {
-				"panelColor": "#548DD4",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 349,
-						"Y": 56
+			"Speaker" : 
+			{
+				"panelColor" : "#548DD4",
+				"panel" : 
+				{
+					"isOpen" : "true",
+					"pathVisible" : true,
+					"position" : 
+					{
+						"X" : 349,
+						"Y" : 56
 					}
 				}
 			}
 		},
-		"model": {
-			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 0,
-			"lastScriptLocation": {
-				"Attendee": {
-					"computed": "Attendee/Attendee-events.js"
+		"model" : 
+		{
+			"scriptMode" : "manual",
+			"workspaceLeft" : 0,
+			"workspaceTop" : 0,
+			"lastScriptLocation" : 
+			{
+				"Attendee" : 
+				{
+					"computed" : "Attendee/Attendee-events.js"
 				},
-				"Speaker": {
-					"computed": "Speaker/Speaker-events.js"
+				"Speaker" : 
+				{
+					"computed" : "Speaker/Speaker-events.js"
 				},
-				"Venue": {
-					"computed": "Venue/Venue-events.js"
+				"Venue" : 
+				{
+					"computed" : "Venue/Venue-events.js"
 				},
-				"Meeting": {
-					"computed": "Meeting/Meeting-events.js"
+				"Meeting" : 
+				{
+					"computed" : "Meeting/Meeting-events.js"
 				}
 			}
 		}
 	},
-	"dataClasses": [
+	"dataClasses" : 
+	[
 		{
-			"name": "Attendee",
-			"className": "Attendee",
-			"collectionName": "AttendeeCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Attendee",
+			"className" : "Attendee",
+			"collectionName" : "AttendeeCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "firstName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "firstName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "lastName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "lastName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "group",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "group",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "email",
-					"kind": "storage",
-					"scope": "public",
-					"not_null": true,
-					"type": "string"
+					"name" : "email",
+					"kind" : "storage",
+					"scope" : "public",
+					"not_null" : true,
+					"type" : "string"
 				},
 				{
-					"name": "street",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string",
-					"defaultFormat": [
+					"name" : "street",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"defaultFormat" : 
+					[
 						{
-							"format": "[1-9]",
-							"presentation": "text"
+							"format" : "[1-9]",
+							"presentation" : "text"
 						}
 					]
 				},
 				{
-					"name": "city",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "city",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "zip",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "zip",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "state",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "state",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "country",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "country",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "telephone",
-					"kind": "storage",
-					"scope": "public",
-					"not_null": true,
-					"type": "string",
-					"identifying": true,
-					"defaultFormat": [
+					"name" : "telephone",
+					"kind" : "storage",
+					"scope" : "public",
+					"not_null" : true,
+					"type" : "string",
+					"identifying" : true,
+					"defaultFormat" : 
+					[
 						{
-							"format": "(###) ###-####",
-							"presentation": "text"
+							"format" : "(###) ###-####",
+							"presentation" : "text"
 						}
 					]
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Meeting",
-			"className": "Meeting",
-			"collectionName": "MeetingCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Meeting",
+			"className" : "Meeting",
+			"collectionName" : "MeetingCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "title",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "title",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "description",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string",
-					"multiLine": true
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"multiLine" : true
 				},
 				{
-					"name": "date",
-					"kind": "storage",
-					"scope": "public",
-					"type": "date",
-					"simpleDate": false
+					"name" : "date",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "date",
+					"simpleDate" : false
 				},
 				{
-					"name": "votingurl",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "votingurl",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "panels",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "SpeakerCollection",
-					"reversePath": true,
-					"path": "presentation"
+					"name" : "panels",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "SpeakerCollection",
+					"reversePath" : true,
+					"path" : "presentation"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Presentation",
-			"className": "Presentation",
-			"collectionName": "PresentationCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Presentation",
+			"className" : "Presentation",
+			"collectionName" : "PresentationCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "time",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "time",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "title",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "title",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "description",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string",
-					"multiLine": true
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"multiLine" : true
 				},
 				{
-					"name": "presenter",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "SpeakerCollection",
-					"reversePath": true,
-					"path": "presentation"
+					"name" : "presenter",
+					"kind" : "relatedEntities",
+					"scope" : "public",
+					"type" : "SpeakerCollection",
+					"reversePath" : true,
+					"path" : "presentation"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Speaker",
-			"className": "Speaker",
-			"collectionName": "SpeakerCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Speaker",
+			"className" : "Speaker",
+			"collectionName" : "SpeakerCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "firstName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "firstName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "lastName",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "lastName",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "biography",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "biography",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "url",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "url",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "photo",
-					"kind": "storage",
-					"scope": "public",
-					"type": "image"
+					"name" : "photo",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "image"
 				},
 				{
-					"name": "fullName",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "fullName",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "model.Speaker.fullName.onGet",
-							"userDefined": true
+							"from" : "model.Speaker.fullName.onGet",
+							"userDefined" : true
 						}
 					]
 				},
 				{
-					"name": "presentation",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Presentation",
-					"path": "Presentation"
+					"name" : "presentation",
+					"kind" : "relatedEntity",
+					"scope" : "public",
+					"type" : "Presentation",
+					"path" : "Presentation"
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		},
 		{
-			"name": "Venue",
-			"className": "Venue",
-			"collectionName": "VenueCollection",
-			"scope": "public",
-			"attributes": [
+			"name" : "Venue",
+			"className" : "Venue",
+			"collectionName" : "VenueCollection",
+			"scope" : "public",
+			"attributes" : 
+			[
 				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"indexKind": "btree",
-					"primKey": true
+					"name" : "ID",
+					"kind" : "storage",
+					"scope" : "public",
+					"indexed" : true,
+					"unique" : true,
+					"autosequence" : true,
+					"type" : "long",
+					"indexKind" : "btree"
 				},
 				{
-					"name": "name",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "name",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "street",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "street",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "city",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "city",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "zip",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string",
-					"defaultFormat": [
+					"name" : "zip",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string",
+					"defaultFormat" : 
+					[
 						{
-							"format": "[1-9]",
-							"presentation": "text"
+							"format" : "[1-9]",
+							"presentation" : "text"
 						}
 					]
 				},
 				{
-					"name": "state",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "state",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "country",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "country",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "description",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
+					"name" : "description",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "string"
 				},
 				{
-					"name": "image",
-					"kind": "storage",
-					"scope": "public",
-					"type": "image"
+					"name" : "image",
+					"kind" : "storage",
+					"scope" : "public",
+					"type" : "image"
 				},
 				{
-					"name": "fullAddress",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
+					"name" : "fullAddress",
+					"kind" : "calculated",
+					"scope" : "public",
+					"type" : "string",
+					"scriptKind" : "javascript",
+					"onGet" : 
+					[
 						{
-							"from": "model.Venue.fullAddress.onGet",
-							"userDefined": true
+							"from" : "model.Venue.fullAddress.onGet",
+							"userDefined" : true
 						}
 					]
+				}
+			],
+			"key" : 
+			[
+				{
+					"name" : "ID"
 				}
 			]
 		}
-	],
-	"type": []
+	]
 }
