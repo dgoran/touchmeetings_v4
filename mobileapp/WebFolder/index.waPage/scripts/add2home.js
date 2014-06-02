@@ -24,7 +24,7 @@ var addToHome = (function (w) {
 
 		options = {
 			autostart: true,			// Automatically open the balloon
-			returningVisitor: false,	// Show the balloon to returning visitors only (setting this to true is highly recommended)
+			returningVisitor: true,	// Show the balloon to returning visitors only (setting this to true is highly recommended)
 			animationIn: 'drop',		// drop || bubble || fade
 			animationOut: 'fade',		// drop || bubble || fade
 			startDelay: 1000,			// 2 seconds from page load before the balloon appears
@@ -32,7 +32,7 @@ var addToHome = (function (w) {
 			bottomOffset: 14,			// Distance of the balloon from bottom
 			expire: 0,					// Minutes to wait before showing the popup again (0 = always displayed)
 			message: '',				// Customize your message or force a language ('' = automatic)
-			touchIcon: true,			// Display the touch icon
+			touchIcon: false,			// Display the touch icon
 			arrow: false,				// Display the balloon arrow
 			hookOnLoad: false,			// Should we hook to onload event? (really advanced usage)
 			closeButton: true,			// Let the user close the balloon

@@ -170,19 +170,6 @@
 							"presentation": "text"
 						}
 					]
-				},
-				{
-					"name": "fullAddress",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "model.Attendee.fullAddress.onGet",
-							"userDefined": true
-						}
-					]
 				}
 			]
 		},
