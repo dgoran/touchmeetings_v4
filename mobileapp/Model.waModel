@@ -9,8 +9,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 390,
-						"Y": 416
+						"X": 357,
+						"Y": 388
 					}
 				}
 			},
@@ -42,8 +42,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 44,
-						"Y": 482
+						"X": 50,
+						"Y": 357
 					}
 				}
 			},
@@ -235,19 +235,6 @@
 					"type": "SpeakerCollection",
 					"reversePath": true,
 					"path": "presentation"
-				},
-				{
-					"name": "location",
-					"kind": "calculated",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript",
-					"onGet": [
-						{
-							"from": "model.Meeting.location.onGet",
-							"userDefined": true
-						}
-					]
 				}
 			]
 		},
@@ -446,15 +433,9 @@
 							"userDefined": true
 						}
 					]
-				},
-				{
-					"name": "fullAddress1",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Meeting",
-					"path": "Meeting"
 				}
 			]
 		}
-	]
+	],
+	"type": []
 }
